@@ -8,7 +8,7 @@ import os
 
 st.set_page_config("Monodepth vs Ground Truth", "***", layout="wide")
 
-
+# Adding a comment to check git settings
 # st.image(
 #     "https://eak2mvmpt4a.exactdn.com/wp-content/uploads/2020/07/A-Guide-to-Lidar-Wavelengths-Velodyne-Lidar-AlphaPrime-1024x508.jpg",
 #     width=1024,
