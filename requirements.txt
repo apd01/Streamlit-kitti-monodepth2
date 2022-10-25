@@ -4,4 +4,4 @@ numpy
 opencv-python
 streamlit
 streamlit_image_comparison
-skimage
+scikit-image
