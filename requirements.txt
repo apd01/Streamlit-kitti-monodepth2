@@ -1,7 +1,7 @@
 sklearn
 albumentations
 numpy
-cv2
+opencv-python
 streamlit
 streamlit_image_comparison
 skimage
