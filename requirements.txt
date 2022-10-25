@@ -1,7 +1,6 @@
 sklearn
 albumentations
 numpy
-random
 cv2
 streamlit
 streamlit_image_comparison
