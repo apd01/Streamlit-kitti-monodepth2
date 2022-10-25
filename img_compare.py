@@ -40,7 +40,7 @@ model_types = [ "mono_640x192",
                 "mono+stereo_1024x320" ]
 
 with st.sidebar.form(key="selectAugmentation"):
-    get_monodepth.download()
+    # get_monodepth.download()
     selectbox_state = st.selectbox("Choose an augmentation type", augmentation_choices)
     numberinput_threshold = st.number_input(
         """Set variance for Gaussian augmentation""",
