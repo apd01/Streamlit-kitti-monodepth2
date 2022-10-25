@@ -1,7 +1,7 @@
 sklearn
 albumentations
 numpy
-opencv-python
+opencv-python-headless
 streamlit
 streamlit_image_comparison
 scikit-image
