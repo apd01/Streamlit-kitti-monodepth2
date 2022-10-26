@@ -94,14 +94,14 @@ if build_depth_map_pressed:
     img_augmented_path = img_path+'_'+selectbox_state+img_suffix
     
     with st.spinner(text="Generating original depth map..."):
-        monodepth_command = r'python .\monodepth2\test_simple.py --image_path' + r' ' +  img_augmented_path + r' --model_name ' + selectbox_model[12:] + r' --pred_metric_depth'
+        monodepth_command = r'python ./monodepth2/test_simple.py --image_path' + r' ' +  img_augmented_path + r' --model_name ' + selectbox_model[12:] + r' --pred_metric_depth'
         print("monodepth_command: " + monodepth_command)
         os.system(monodepth_command)
         
         # TODO: if it doesn't already exist...
     with st.spinner(text="Generating augmented depth map..."):
-        # monodepth_command = r'python .\monodepth2\test_simple.py --image_path' + r' ' +  img_path+img_suffix + r' --model_name mono+stereo_640x192 --pred_metric_depth'
-        monodepth_command = r'python .\monodepth2\test_simple.py --image_path' + r' ' +  img_path+img_suffix + r' --model_name ' + selectbox_model[12:] + r' --pred_metric_depth'
+        # monodepth_command = r'python ./monodepth2/test_simple.py --image_path' + r' ' +  img_path+img_suffix + r' --model_name mono+stereo_640x192 --pred_metric_depth'
+        monodepth_command = r'python ./monodepth2/test_simple.py --image_path' + r' ' +  img_path+img_suffix + r' --model_name ' + selectbox_model[12:] + r' --pred_metric_depth'
         os.system(monodepth_command)
 
     placeholder_image = image_comparison(
